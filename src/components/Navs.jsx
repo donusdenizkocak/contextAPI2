@@ -3,11 +3,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
-import { LoginContext } from "../context/LoginContext";
-import { useContext } from "react";
+import { useLoginContext } from "../context/LoginProvider";
 
 function Navs() {
-  const {user,setUser} = useContext(LoginContext)
+  const {user,setUser} = useLoginContext()
   return (
     <Navbar expand="md">
       <Container>
