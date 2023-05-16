@@ -5,9 +5,9 @@ export const LoginContext = createContext()
 
 //! 2) Provider
 
-import React from 'react'
 
-export const LoginProvider = ({children}) => {
+
+ const LoginProvider = ({children}) => {
     const [user, setUser] = useState({ email: "", password: "" });
     let values={user,setUser}
   return (
